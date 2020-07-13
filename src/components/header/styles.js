@@ -7,16 +7,12 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 10,
+    position: 'relative',
+    marginLeft: 50,
   },
   image: {
     width: (width * 80) / 100,
     height: (height * 6) / 100,
     resizeMode: 'cover',
   },
-  hamburger: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-  },
-  line: {backgroundColor: 'black', width: 25, height: 3, margin: 3},
 });

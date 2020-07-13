@@ -57,7 +57,9 @@ export const styles = StyleSheet.create({
     opacity: 0.5,
   },
   titleItem: {
-    fontSize: 24,
+    marginRight: 20,
+    width: width / 2,
+    fontSize: 16,
     fontWeight: '700',
     color: '#333',
   },

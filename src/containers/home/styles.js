@@ -45,4 +45,23 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     padding: 10,
   },
+  imageSlider: {
+    width: width,
+    height: (width * 25) / 100,
+  },
+  hamburger: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    position: 'absolute',
+    top: 20,
+    left: 10,
+    zIndex: 9,
+  },
+  line: {
+    backgroundColor: 'black',
+    width: 25,
+    height: 3,
+    margin: 3,
+  },
 });

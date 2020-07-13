@@ -145,7 +145,7 @@ const SplashContainer = props => {
   const [isSearch, setSearch] = useState(true);
 
   const handleBack = () => {
-    props.navigation.navigate('Home');
+    props.navigation.navigate('Trang chủ');
   };
 
   const handleBackToSubmit = () => {
@@ -163,14 +163,14 @@ const SplashContainer = props => {
     return (
       <View style={styles.itemSchedule}>
         <Text style={styles.itemText}>
-          <Text style={{fontWeight: 'bold'}}>Name: </Text>
+          <Text style={{fontWeight: 'bold'}}>Tên môn thi: </Text>
           {item.name}
         </Text>
         <Text style={styles.itemText}>
-          <Text style={{fontWeight: 'bold'}}>Date: </Text> {item.ngayThi}
+          <Text style={{fontWeight: 'bold'}}>Ngày thi: </Text> {item.ngayThi}
         </Text>
         <Text style={styles.itemText}>
-          <Text style={{fontWeight: 'bold'}}>Location: </Text> {item.phongThi}
+          <Text style={{fontWeight: 'bold'}}>Phòng thi: </Text> {item.phongThi}
         </Text>
       </View>
     );
@@ -183,13 +183,9 @@ const SplashContainer = props => {
         </TouchableOpacity>
         <View style={styles.searchScoreContainer}>
           <Image source={Logo} style={styles.image} />
-          {}
-          <TextInput
-            style={styles.textInput}
-            placeholder="Enter the student id"
-          />
+          <TextInput style={styles.textInput} placeholder="Nhập mã sinh viên" />
           <TouchableOpacity onPress={handleSubmit} style={styles.buttonSubmit}>
-            <Text style={styles.txtSubmit}>Submit</Text>
+            <Text style={styles.txtSubmit}>Tra cứu</Text>
           </TouchableOpacity>
         </View>
       </>
@@ -203,7 +199,7 @@ const SplashContainer = props => {
           <Icon name="angle-left" size={30} color="#e74c3c" />
         </TouchableOpacity>
         <View style={styles.listSchedule}>
-          <Text style={styles.titleSchedule}>List Schedule</Text>
+          <Text style={styles.titleSchedule}>Danh sách lịch thi</Text>
           <FlatList
             showsVerticalScrollIndicator={false}
             data={fakeData}

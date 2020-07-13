@@ -13,9 +13,13 @@ const Drawer = createDrawerNavigator();
 
 function DrawerComponents() {
   return (
-    <Drawer.Navigator initialRouteName="Home">
-      <Drawer.Screen name="Home" component={Home} />
-      <Drawer.Screen name="TestSchedule" component={TestSchedule} />
+    <Drawer.Navigator initialRouteName="Trang chủ">
+      <Drawer.Screen name="Trang chủ" component={Home} />
+      <Drawer.Screen name="Tra lịch thi" component={TestSchedule} />
+      <Drawer.Screen name="Tin tức" component={Home} />
+      <Drawer.Screen name="Thông báo" component={Home} />
+      <Drawer.Screen name="Thư viện" component={Home} />
+      <Drawer.Screen name="Tuyển sinh" component={Home} />
     </Drawer.Navigator>
   );
 }

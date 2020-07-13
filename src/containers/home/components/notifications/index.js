@@ -13,18 +13,24 @@ const data = [
   {
     id: 1,
     image: require('../../../../assets/images/tintuc1.jpg'),
+    name:
+      'Lễ công bố của 07 trường đại học kỹ thuật về phát triển các chương trình đào tạo kỹ sư',
   },
   {
     id: 2,
     image: require('../../../../assets/images/tintuc2.jpg'),
+    name: 'Tư vấn tuyển sinh tại Trường THPT Tam Phú - Thủ Đức',
   },
   {
     id: 3,
     image: require('../../../../assets/images/tintuc3.jpg'),
+    name: 'Tư vấn tuyển sinh tại Trường THPT Tam Phú - Thủ Đức',
   },
   {
     id: 4,
     image: require('../../../../assets/images/tintuc4.jpg'),
+    name:
+      'Đại hội Đảng bộ Trường Đại học Giao thông vận tải lần thứ XXX, nhiệm kỳ 2020 - 2025',
   },
 ];
 const EventComponent = props => {
@@ -33,8 +39,8 @@ const EventComponent = props => {
       <TouchableOpacity style={styles.item}>
         <Image style={styles.imageItem} source={item.image} />
         <View style={{marginLeft: 20}}>
-          <Text style={styles.timeItem}>{new Date().getFullYear()}</Text>
-          <Text style={styles.titleItem}>aa</Text>
+          <Text style={styles.timeItem}>{new Date().toLocaleDateString()}</Text>
+          <Text style={styles.titleItem}>{item.name}</Text>
         </View>
       </TouchableOpacity>
     );

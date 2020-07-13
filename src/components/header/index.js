@@ -5,13 +5,6 @@ import {styles} from './styles';
 const HeaderComponents = props => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        onPress={props.handleClickhamburger}
-        style={styles.hamburger}>
-        <View style={styles.line} />
-        <View style={styles.line} />
-        <View style={styles.line} />
-      </TouchableOpacity>
       <Image source={Pannel} style={styles.image} />
     </View>
   );
